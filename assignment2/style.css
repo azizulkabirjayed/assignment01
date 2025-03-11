@@ -1,0 +1,250 @@
+/* General styles */
+* {
+  font-family: serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* Background color for the entire page */
+body {
+  background-color: #f3f5f9;
+}
+
+/* Main container styling */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Title and subtitle styles */
+.title {
+  font-size: 1.5em;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 1.2em;
+  margin-top: 1rem;
+}
+
+/* Quote container styling */
+.quote-container {
+  max-width: 550px;
+  border: 1px solid grey;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* Styling for color selection boxes */
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+}
+
+/* Individual color box styles */
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.box-1 {
+  background-color: greenyellow;
+}
+
+.box-2 {
+  background-color: orange;
+}
+
+.box-3 {
+  background-color: skyblue;
+}
+
+.box-4 {
+  background-color: orangered;
+}
+
+/* Part 2 - Timer section styling */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+/* Button styles */
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Part 3 - Task manager section styling */
+.container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.task-input,
+.task-list {
+  width: 100%;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Task input text box styling */
+.text-box {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Add task button styling */
+.add-btn {
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.task-container {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Task list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox styling */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.task-text {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button styling */
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: red;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+/* Responsive styles */
+@media (max-width:576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+      max-width: 1180px;
+  }
+}

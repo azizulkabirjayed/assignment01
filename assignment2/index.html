@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Assignment 2</title>
+</head>
+
+<body onload="generateQuote()">
+    <!-- Quote Box Section -->
+    <div class="quote-box-container">
+        <h1 class="title">Assignment 2</h1>
+        <div class="container">
+            <h2 class="sub-title">Part 1: Quote Box</h2>
+            <div style="display:flex">
+                <!-- Quote container where the quote will be displayed -->
+                <div id="quote-container" class="quote-container">
+                    <span id="quote"></span>
+                </div>
+                
+                <!-- Color selection boxes -->
+                <div class="">
+                    <div onclick="changeStyle('box1')" class="box">
+                        <div class="box-1"></div>
+                    </div>
+                    <div onclick="changeStyle('box2')" class="box">
+                        <div class="box-2"></div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div onclick="changeStyle('box3')" class="box">
+                        <div class="box-3"></div>
+                    </div>
+                    <div onclick="changeStyle('box4')" class="box">
+                        <div class="box-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Part 2: Stopwatch -->
+<div class="part_2">
+    <div class="container">
+        <h2 class="sub-title">Part 2: Stopwatch</h2>
+        <!-- Stopwatch display -->
+        <div class="time" id="display">0 sec</div>
+        <div class="buttons">
+            <!-- Buttons for stopwatch control -->
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+</div>
+<!-- Part 2 End -->
+
+<!-- Part 3: Task Manager -->
+<div class="container">
+    <!-- Task Input Section -->
+    <div class="task-input">
+      <h2 class="heading">Add a Task</h2>
+      <!-- Text area for entering task -->
+      <textarea id="taskText" placeholder="Enter your task..." class="text-box"></textarea>
+      <!-- Button to add task -->
+      <button onclick="addTask()" class="add-btn">Add Task</button>
+    </div>
+
+    <!-- Task List Section -->
+    <div class="task-list">
+      <h2 class="heading">Task List</h2>
+      <div class="task-container">
+        <!-- List where tasks will be added dynamically -->
+        <ul id="taskItems"></ul>
+      </div>
+    </div>
+</div>
+<!-- Part 3 End -->
+
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
